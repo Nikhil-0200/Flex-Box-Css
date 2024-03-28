@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "Poppins";
+            font-weight: 500;
+            text-align: center;
+            padding: 10px;
+        }
+        #gridBox{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+
+        #gridBox > div:nth-child(1){
+            background-color: white;
+        }
+
+        #gridBox > div{
+            border-radius: 30px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .aqua{
+            background-color: aqua;
+            
+        }
+        .lastDiv{
+            border-radius: 30px;
+            padding: 5px 10px;
+            text-align: center;
+            height: 20px;
+            background-color: aqua;
+        margin-top: 20px;  
+        text-align: start;     
+     }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Weekly Schedule</h1>
+
+        <div id="gridBox">
+            <div></div>
+            <div class="aqua">Monday</div>
+            <div class="aqua">Tuesday</div>
+            <div class="aqua">Wednesday</div>
+            <div class="aqua">Thursday</div>
+            <div class="aqua">Friday</div>
+            <div class="aqua">08:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">09:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">10:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">11:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">12:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">13:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">14:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">15:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="aqua">16:00</div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>            
+        </div>
+        <div class="aqua, lastDiv">Note: </div>
+
+    </main>
+</body>
+</html>
