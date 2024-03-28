@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: "Poppins";
+            }
+            h1{
+                font-family: "Poppins";
+                text-align: center;
+            }
+            #itemDiv{
+                width: 80%;
+                background-color: aqua;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+                gap: 20px;
+                padding: 20px;
+                border-radius: 25px;
+            }
+
+            #itemCard{
+                width: 22%;
+                height: 220px;
+                background-color: #ffff;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-radius: 20px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <main>
+            <h1>Hiring Facts</h1>
+
+            <div id="itemDiv">
+
+            </div>
+        </main>
+        
+        <script>
+            const itemDiv = document.getElementById("itemDiv");
+            let arr = [
+                {
+                    id: 1,
+                    img: "https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-1.svg",
+                    heading: "Hiring Process",
+                    subHead: "< 3 Days"
+                },
+                {
+                    id: 2,
+                    img: "https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-2.svg",
+                    heading: "Offer Acceptance",
+                    subHead: "90%",
+                },
+                {
+                    id: 3,
+                    img: "https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-3.svg",
+                    heading: "Retention Rate",
+                    subHead: "93%",
+                },
+                {
+                    id: 4,
+                    img: "https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-4.svg",
+                    heading: "Hiring Partners",
+                    subHead: "4000+",
+                },
+                {
+                    id: 5,
+                    img: "https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-5.svg",
+                    heading: "Year Round Availability",
+                },
+            ]
+
+            arr.forEach((ele)=>{
+                const itemCard = document.createElement("div");
+                itemCard.id = "itemCard";
+
+                const iconDiv = document.createElement("div");
+                iconDiv.id = "iconDiv"
+                const img = document.createElement("img");
+                const heading = document.createElement("h2");
+                const subHead = document.createElement("h3"); 
+
+
+                img.src = ele.img;
+                heading.textContent = ele.heading;
+                subHead.textContent = ele.subHead
+
+                iconDiv.append(img)
+                itemCard.append(iconDiv, heading, subHead)
+                itemDiv.append(itemCard);
+            })
+
+        </script>
+    </body>
+</html>
